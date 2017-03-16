@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <title>Markdown 新手指南 | 所以。</title>
+  <meta name="author" content="许嘘嘘">
+  <meta name="description" content="许嘘嘘:一个酱油前端的心路历程">
+  <meta name="keywords" content="前端,Markdown">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="/atom.xml" rel="alternate" title="所以。" type="application/atom+xml">
+  <link rel="canonical" href="">
+  <link href="favicon.png" rel="shortcut icon">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="page-inner">
+  <section class="normal markdown-section">
+    <h2 id="markdown-新手指南">Markdown 新手指南</h2>
+    <h3 id="标题">标题</h3>
+    <pre><code># 这是 H1 一级标题
+## 这是 H2 二级标题
+### 这是 H3 三级标题
+#### 这是 H4 四级标题
+##### 这是 H5 五级标题
+###### 这是 H6 六级标题
+</code></pre>
+    <h3 id="引用">引用</h3>
+    <p>使用 <code>&gt;</code> 来标识引用段落。</p>
+    <pre><code>&gt; 我是一段引用的文字。可以很长也可以很短
+</code></pre>
+    <blockquote>
+      <p>我是一段引用的文字。可以很长也可以很短</p>
+    </blockquote>
+    <h3 id="列表">列表</h3>
+    <h4 id="无序列表">无序列表</h4>
+    <p><code>*</code>, <code>+</code>, <code>-</code> 空格加上文字描述，都可以表示列表</p>
+    <pre><code>- 无序列表文本1
+- 无序列表文本2
+- 无序列表文本3
+</code></pre>
+    <ul>
+      <li>无序列表文本1</li>
+      <li>无序列表文本2</li>
+      <li>无序列表文本3</li>
+    </ul>
+    <h4 id="有序列表">有序列表</h4>
+    <pre><code>1. 有序列表文本1
+2. 有序列表文本2
+3. 有序列表文本3
+</code></pre>
+    <p>很重要的一点是，有序列表标记上使用的数字并不会影响输出的结果。所以也可以是</p>
+    <pre><code>1. 有序列表文本1
+1. 有序列表文本2
+1. 有序列表文本3
+</code></pre>
+    <ol>
+      <li>有序列表文本1</li>
+      <li>有序列表文本2</li>
+      <li>有序列表文本3</li>
+    </ol>
+    <p>但是值得注意的是，以上几点语法的符号（<code>#</code>, <code>&gt;</code>, <code>*</code>, <code>+</code>, <code>-</code>, <code>1.</code>）和文字之间需要留空格才是标准的写法</p>
+    <hr>
+    <h3 id="强调">强调</h3>
+    <p>使用星号 <code>*</code> 和底线 <code>_</code> 作为标记强调字词的符号。被一个 <code>*</code> 或 <code>_</code> 包围的字词会被转成<em>斜体</em>，用两个 <code>*</code> 或 <code>_</code> 包起来的话会被转成<strong>粗体</strong>：</p>
+    <pre><code>*斜体文字*
+_斜体文字_
+**粗体文字**
+__粗体文字__
+</code></pre>
+    <h3 id="分割线">分割线</h3>
+    <p>想要区分不同段落的大意，做一些分割处理，可以用三个以上的 <code>*</code> 、<code>-</code>、<code>_</code>来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+    <pre><code>* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+</code></pre>
+    <p>效果就如同<code>强调</code>段落之前的那条分割线。</p>
+    <h3 id="链接和图片">链接和图片</h3>
+    <p><code>[显示文本](链接地址)</code> 链接：
+      <a href="http://weibo.com/p/1005051581992285/home?from=page_100505&amp;mod=TAB&amp;is_all=1#place" target="_blank">一只鸡腿的退休之路</a></p>
+    <p>图片也非常简单，就是在链接前面加一个 <code>!</code>。</p>
+    <p><code>![图片描述（可选填）](图片链接地址)</code></p>
+    <p><img src="http://wx2.sinaimg.cn/mw1024/006JooPRly1fdjqr8yrg3j30u00u0q5b.jpg" alt="果果一枚"></p>
+    <h3 id="表格">表格</h3>
+    <pre><code>dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
+</code></pre>
+    <table>
+      <thead>
+        <tr>
+          <th>dog</th>
+          <th>bird</th>
+          <th>cat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>foo</td>
+          <td>foo</td>
+          <td>foo</td>
+        </tr>
+        <tr>
+          <td>bar</td>
+          <td>bar</td>
+          <td>bar</td>
+        </tr>
+        <tr>
+          <td>baz</td>
+          <td>baz</td>
+          <td>baz</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>如果想切换对齐方式，可以用<code>:</code> 的位置用来表示。</p>
+    <pre><code>| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| left          | center        | right |
+</code></pre>
+    <table>
+      <thead>
+        <tr>
+          <th>Tables</th>
+          <th style="text-align:center">Are</th>
+          <th style="text-align:right">Cool</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>left</td>
+          <td style="text-align:center">center</td>
+          <td style="text-align:right">right</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="注意事项">注意事项</h3>
+    <p>最后值得注意的是，Markdown 的段落是由一个或多个连续的文本行组成，它的前后要有<strong>一个以上的空行</strong>，而且多个回车只会被转成一个换行。</p>
+    <p>如果你确实想要依赖 Markdown 来插入大段空行，在插入处先按入<strong>两个以上的空格</strong>然后回车。</p>
+  </section>
+  <br>
+  <br>
+</body>
+
+</html>
